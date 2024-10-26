@@ -64,34 +64,13 @@ cp .env.example .env
 docker-compose up --build
 ```
 
-The API will be available at `http://localhost:5000`
+The API will be available at `http://localhost:5001`
 
-## Development Setup
-
-1. Create a virtual environment:
-```bash
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-```
-
-2. Install dependencies:
-```bash
-pip install -r requirements.txt
-pip install -r requirements-test.txt
-```
-
-3. Run migrations:
-```bash
-flask db upgrade
-```
-
-4. Start the development server:
-```bash
-flask run
-```
 
 ## Running Tests
 
+<!-- This remains to do for now  -->
+<!-- 
 Using Docker:
 ```bash
 docker-compose -f docker-compose.test.yml up --build
@@ -100,13 +79,13 @@ docker-compose -f docker-compose.test.yml up --build
 Locally:
 ```bash
 pytest -v
-```
+``` -->
 
 ## API Documentation
 
 Once the application is running, access the Swagger documentation at:
 ```
-http://localhost:5000/api/docs
+http://localhost:5001/api/docs
 ```
 
 ## Database Migrations
